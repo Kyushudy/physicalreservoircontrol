@@ -1,4 +1,4 @@
-# physicalreservoircontrol
+# Physical Reservoir Control Program
 
 # MATLAB Version
 This code was developed using MATLAB R2024a. Versions later than R2024a should also be compatible.
