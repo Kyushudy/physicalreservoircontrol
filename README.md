@@ -8,8 +8,11 @@ Please ensure that all toolboxes related to Simulink and Simscape are installed.
 
 # Required MATLAB Apps
 After installing MATLAB, open the application and navigate to "**APPS**" → "**Get More Apps**". Install the following three packages:
+
 1 **Robotics Playground**
+
 2 **Robotics Playground Expansion Pack**
+
 3 **MATLAB Support Package for Arduino Hardware**
 
 # Main Simulation Script
