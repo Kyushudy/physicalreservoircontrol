@@ -22,6 +22,14 @@ To run the simulation and collect data for the pendulum's free fall and swing-up
 
 *(Expected output: see vid1_training_and_control.mp4)*
 
+# Reproduction Instructions
+
+To reproduce the data analyzed in this research, run the following scripts: "**simulation code\PR_data_stability_kick.m**", "**simulation code\PR_data_stability_losetrack.m**", and "**simulation code\PR_data_stability_noise.m**"
+
+Each script will generate output and save the results into the `data` folder. The repository already includes this `data` folder with the generated datasets.
+
+*(Estimated run time: ~7 days)*
+
 # Physical Experiment Setup
 Computer 1 (Physical Reservoir + OptiTrack system) runs the following scripts in parallel: "**experiment code\run_receive.m**" and "**experiment code\run_send.m**"
 
