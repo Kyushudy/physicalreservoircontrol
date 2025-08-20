@@ -13,7 +13,9 @@ After installing MATLAB, open the application and navigate to "**APPS**" → "**
 
 2 **Robotics Playground Expansion Pack**
 
-3 **MATLAB Support Package for Arduino Hardware**
-
 # Main Simulation Script
 To run the simulation and collect data for the pendulum's free fall and swing-up tests using the physical reservoir, execute the following script: "**simulation code\PR_test_freedrop_continuous.m**"
+
+# Physical Experiment Script
+
+For MATLAB control Arduino, please also install **MATLAB Support Package for Arduino Hardware**
