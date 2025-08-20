@@ -6,7 +6,7 @@ This code was developed using **MATLAB R2024a**. Versions later than R2024a shou
 # Required MATLAB Toolboxes
 Please ensure that all toolboxes related to Simulink and Simscape are installed. For convenience and to avoid compatibility issues, we recommend **installing all available toolboxes** during MATLAB installation.
 
-Ideally, the install time will be 30 minutes.
+Ideally, the install time will be 1 hour.
 
 # Required MATLAB Apps
 After installing MATLAB, open the application and navigate to "**APPS**" → "**Get More Apps**". Install the following three packages:
