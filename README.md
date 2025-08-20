@@ -32,9 +32,9 @@ Each script will generate output and save the results into the `data` folder. Th
 
 # Mathematical Model
 
-All parameter values mentioned in the manuscript can be found in: "**mathematical model\pd_model.m**"
+All parameter values mentioned in the manuscript can be found in: "**mathematical model\pd_parameters_orig.m**"
 
-To generate the pole-zero map data demonstrated in **Figure 6**, run: "**mathematical model\pd_parameters.m**"
+To generate the pole-zero map data demonstrated in **Figure 6**, run: "**mathematical model\pd_model.m**"
 
 # Physical Experiment Setup
 Computer 1 (Physical Reservoir + OptiTrack system) runs the following scripts in parallel: "**experiment code\run_receive.m**" and "**experiment code\run_send.m**"
