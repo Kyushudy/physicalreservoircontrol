@@ -1,34 +1,34 @@
 %%
-% robot_base_state = [0; 0];
-% robot_target_state = [0; 0];
-% amp_factor = [0.15; 0.03]; 
-% res_base_state = [(robot_base_state.*amp_factor)';
-%     -(robot_base_state.*amp_factor)';
-%     0 0;
-%     0 0];
-% Wout = zeros(1,7);
-% kp = 10;
+robot_base_state = [0; 0];
+robot_target_state = [0; 0];
+amp_factor = [0.15; 0.03]; 
+res_base_state = [(robot_base_state.*amp_factor)';
+    -(robot_base_state.*amp_factor)';
+    0 0;
+    0 0];
+Wout = zeros(1,7);
+kp = 10;
 
 %%
-% wscale = 256/pi;
-% x = 0.04:0.02:0.14;
-% y = 0.001*[4.77 6.94 9.41 11.59 14.13 16.53];
-% p = polyfit(x, y, 1);
-% l_list = [0.08; 0.10];
-% lt_list = [0.04; 0.04];
-% param_l = [lt_list, l_list];
-% mp_list = polyval(p, l_list);
-% mp = [[0.0086; 0.0086], mp_list];
-% mb = 0.003;
-% mo = [0.0058, 0.0041;
-%     0.0058, 0.0041];
-% Ip = [0.00000337, mp(1,2)*param_l(1,2)*param_l(1,2)/12;
-%     0.00000337, mp(2,2)*param_l(2,2)*param_l(2,2)/12];
-% cp = [[0.009; 0.009], l_list/2];
-% param_c = (cp.*mp + 0.*mb + param_l.*mb + param_l.*mo)./(mp + mb + mb + mo);
-% param_I = Ip + mp.*(param_c - cp).*(param_c - cp) + mb.*param_c.*param_c + mb.*(param_l - param_c).*(param_l - param_c) + mo.*(param_l - param_c).*(param_l - param_c);
-% param_m = mp + 2*mb + mo;
-% param_mu = 4.4e-5*ones(2,2);
+wscale = 256/pi;
+x = 0.04:0.02:0.14;
+y = 0.001*[4.77 6.94 9.41 11.59 14.13 16.53];
+p = polyfit(x, y, 1);
+l_list = [0.08; 0.10];
+lt_list = [0.04; 0.04];
+param_l = [lt_list, l_list];
+mp_list = polyval(p, l_list);
+mp = [[0.0086; 0.0086], mp_list];
+mb = 0.003;
+mo = [0.0058, 0.0041;
+    0.0058, 0.0041];
+Ip = [0.00000337, mp(1,2)*param_l(1,2)*param_l(1,2)/12;
+    0.00000337, mp(2,2)*param_l(2,2)*param_l(2,2)/12];
+cp = [[0.009; 0.009], l_list/2];
+param_c = (cp.*mp + 0.*mb + param_l.*mb + param_l.*mo)./(mp + mb + mb + mo);
+param_I = Ip + mp.*(param_c - cp).*(param_c - cp) + mb.*param_c.*param_c + mb.*(param_l - param_c).*(param_l - param_c) + mo.*(param_l - param_c).*(param_l - param_c);
+param_m = mp + 2*mb + mo;
+param_mu = 4.4e-5*ones(2,2);
 
 g = 9.80665;  
 
@@ -82,12 +82,12 @@ C_res = [0 Wout(1,6) 0 0 0 Wout(1,7) 0 0];
 D_res = [Wout(1,2) Wout(1,3)];
 Bias_res = Wout(1,1) + Wout(1,2:3)*robot_base_state + Wout(1,4:5)*robot_target_state;
 
-% robot_penrho = 1000;
-% robot_penlength = 0.20;
-% robot_penwidth = 0.02;
-% robot_pendepth = 0.02;
-% robot_damping_coeff = 1e-5; % 1e-5 or 0
-% robot_m = robot_penrho*robot_penlength*robot_penwidth*robot_pendepth;
+robot_penrho = 1000;
+robot_penlength = 0.20;
+robot_penwidth = 0.02;
+robot_pendepth = 0.02;
+robot_damping_coeff = 1e-5; % 1e-5 or 0
+robot_m = robot_penrho*robot_penlength*robot_penwidth*robot_pendepth;
 
 RmatL = [1 0;
     0 1/3*robot_m*robot_penlength^2];
@@ -108,5 +108,6 @@ B_sys = [B_rob*Bias_res; zeros(8,1)];
 
 C_sys = eye(10);
 D_sys = 0;
+
 
 %The stability of 3-DOF triple-rigid-body pendulum system near resonances
