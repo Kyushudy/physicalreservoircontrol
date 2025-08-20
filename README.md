@@ -4,7 +4,7 @@
 This code was developed using **MATLAB R2024a**. Versions later than R2024a should also be compatible.
 
 # Required MATLAB Toolboxes
-Please ensure that all toolboxes related to Simulink and Simscape are installed. For convenience and to avoid compatibility issues, we recommend **installing all available toolboxes** during MATLAB installation.
+Please ensure that **ALL toolboxes related to Simulink and Simscape** are installed. For convenience and to avoid compatibility issues, we recommend **installing all available toolboxes** during MATLAB installation.
 
 *(Estimated installation time: ~1 hour)*
 
