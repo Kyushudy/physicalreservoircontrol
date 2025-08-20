@@ -18,7 +18,7 @@ After installing MATLAB, open the application and navigate to "**APPS**" → "**
 # Demo: Main Simulation Script
 To run the simulation and collect data for the pendulum's free fall and swing-up tests using the (simulated) physical reservoir, execute the following script: "**simulation code\PR_test_freedrop_continuous.m**"
 
-*(Estimated run time: ~1 minute)*
+*(Estimated run time: ~3 minutes)*
 
 *(Expected output: see **vid1_training_and_control.mp4**)*
 
