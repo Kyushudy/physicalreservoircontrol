@@ -26,7 +26,7 @@ To run the simulation and collect data for the pendulum's free fall and swing-up
 
 To reproduce the data analyzed in **Figure 5** and **Figure 7**, run the following scripts: "**simulation code\PR_data_stability_kick.m**", "**simulation code\PR_data_stability_losetrack.m**", and "**simulation code\PR_data_stability_noise.m**"
 
-Each script will generate output and save the results into the `data` folder. The repository already includes this `data` folder with the generated datasets.
+Each script will generate output using the pretrained model in "**simulation code\success_l1_8_l2_10.mat**" and save the results into the `data` folder. The repository already includes this `data` folder with the generated datasets.
 
 *(Estimated run time: ~7 days)*
 
