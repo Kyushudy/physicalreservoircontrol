@@ -10,10 +10,8 @@ Please ensure that **ALL toolboxes related to Simulink and Simscape** are instal
 
 # Required MATLAB Apps
 After installing MATLAB, open the application and navigate to "**APPS**" → "**Get More Apps**". Install the following three packages:
-
-1 **Robotics Playground**
-
-2 **Robotics Playground Expansion Pack**
+- **Robotics Playground**
+- **Robotics Playground Expansion Pack**
 
 *(Estimated installation time: ~10 minutes)*
 
