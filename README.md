@@ -39,4 +39,4 @@ Required installations:
 
 Computer 2 (Underactuated Pendulum Simulation) runs: "**experiment code\run_sim.m**"
 
-Place all files under the `experiment code` folder on **both computers**.
+Place all files under the `experiment code` folder on **both computers**. Please refer to doc1_experiment_setup.docx for setting up the physical experiments.
