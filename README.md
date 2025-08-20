@@ -20,15 +20,21 @@ To run the simulation and collect data for the pendulum's free fall and swing-up
 
 *(Estimated run time: ~1 minute)*
 
-*(Expected output: see vid1_training_and_control.mp4)*
+*(Expected output: see **vid1_training_and_control.mp4**)*
 
 # Reproduction Instructions
 
-To reproduce the data analyzed in this research, run the following scripts: "**simulation code\PR_data_stability_kick.m**", "**simulation code\PR_data_stability_losetrack.m**", and "**simulation code\PR_data_stability_noise.m**"
+To reproduce the data analyzed in **Figure 5** and **Figure 7**, run the following scripts: "**simulation code\PR_data_stability_kick.m**", "**simulation code\PR_data_stability_losetrack.m**", and "**simulation code\PR_data_stability_noise.m**"
 
 Each script will generate output and save the results into the `data` folder. The repository already includes this `data` folder with the generated datasets.
 
 *(Estimated run time: ~7 days)*
+
+# Mathematical Model
+
+All parameter values mentioned in the manuscript can be found in: "**mathematical model\pd_model.m**"
+
+To generate the pole-zero map data demonstrated in **Figure 6**, run: "**mathematical model\pd_parameters.m**"
 
 # Physical Experiment Setup
 Computer 1 (Physical Reservoir + OptiTrack system) runs the following scripts in parallel: "**experiment code\run_receive.m**" and "**experiment code\run_send.m**"
@@ -39,4 +45,4 @@ Required installations:
 
 Computer 2 (Underactuated Pendulum Simulation) runs: "**experiment code\run_sim.m**"
 
-Place all files under the `experiment code` folder on **both computers**. Please refer to doc1_experiment_setup.docx for setting up the physical experiments.
+Place all files under the `experiment code` folder on **both computers**. For detailed instructions on setting up the physical experiments, please refer to **doc1_experiment_setup.docx**.
